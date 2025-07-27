@@ -4,31 +4,232 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-main {
-    padding: 20px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Metrics section */
+.metrics-section {
+    background-color: #f8f9fa;
+}
+
+.metric-item h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.metric-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Benefits section */
+.benefits-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Services section */
+.featured-services-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Portfolio section */
+.portfolio-preview-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    border-color: #007bff;
+    transform: translateY(-3px);
+}
+
+.portfolio-item h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Blog section */
+.latest-posts-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.post-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-item:hover {
+    transform: translateY(-3px);
+}
+
+.post-item h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Contact section */
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40 !important;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .metric-item h2 {
+        font-size: 2rem;
+    }
+    
+    .benefits-section h2,
+    .featured-services-section h2,
+    .portfolio-preview-section h2,
+    .latest-posts-section h2,
+    .contact-section h2 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 20px;
+    .hero-section h1 {
+        font-size: 1.5rem;
     }
-    main {
-        padding: 10px;
+    
+    .metric-item h2 {
+        font-size: 1.5rem;
+    }
+    
+    .benefits-section h2,
+    .featured-services-section h2,
+    .portfolio-preview-section h2,
+    .latest-posts-section h2,
+    .contact-section h2 {
+        font-size: 1.5rem;
     }
 }
 
