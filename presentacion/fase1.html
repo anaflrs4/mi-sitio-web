@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header {
+        color: #2c3e50;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .left-column {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .right-column {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .section-title {
+        color: #2c3e50;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .text-content {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .step-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .step-number {
+        background-color: #3498db;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+      .step-text {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .image-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .screenshot {
+        max-width: 500px;
+        max-height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .url-box {
+        background-color: #e9f7fe;
+        border: 1px solid #3498db;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: #333333;
+        font-size: 18px;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">Fase 1: Ambientación y aprovisionamiento</div>
+      <div class="content-container">
+        <div class="left-column">
+          <div class="section-title">Pasos realizados</div>
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-text">Creación de cuenta en GitHub Pages</div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-text">Configuración del repositorio</div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-text">Creación del archivo index.html básico con encabezado, título y cuerpo</div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-text">Configuración de GitHub Pages en la sección Settings</div>
+          </div>
+          <div class="url-box">
+            Repositorio: https://github.com/anaflrs4/mi-sitio-web
+          </div>
+          <div class="url-box">
+            Sitio web: https://anaflrs4.github.io/mi-sitio-web/
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="image-container">
+            <div class="section-title">Captura del repositorio</div>
+            <img src="/home/ubuntu/mi-sitio-web/capturas/captura_repositorio.png" alt="Captura del repositorio" class="screenshot">
+          </div>
+          <div class="image-container">
+            <div class="section-title">Captura del sitio web</div>
+            <img src="/home/ubuntu/mi-sitio-web/capturas/captura_sitio_web.png" alt="Captura del sitio web" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header {
+        color: #2c3e50;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .left-column {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .right-column {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .section-title {
+        color: #2c3e50;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .text-content {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .code-block {
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 15px;
+        font-family: monospace;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        overflow-x: auto;
+      }
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .feature-icon {
+        color: #3498db;
+        margin-right: 15px;
+        font-size: 24px;
+        flex-shrink: 0;
+      }
+      .feature-text {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .image-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .screenshot {
+        max-width: 500px;
+        max-height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">Fase 5: Implementación de frameworks CSS</div>
+      <div class="content-container">
+        <div class="left-column">
+          <div class="section-title">Implementación de Bootstrap</div>
+          <div class="text-content">
+            Se implementó el framework Bootstrap 5.1 para mejorar el diseño y la funcionalidad del sitio web.
+          </div>
+          <div class="section-title">Código implementado</div>
+          <div class="code-block">
+&lt;!-- CSS de Bootstrap --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
+&lt;!-- JavaScript de Bootstrap --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+          </div>
+          <div class="section-title">Ventajas de Bootstrap</div>
+          <div class="feature-item">
+            <i class="fas fa-th feature-icon"></i>
+            <div class="feature-text">Sistema de rejilla responsivo</div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-puzzle-piece feature-icon"></i>
+            <div class="feature-text">Componentes prediseñados</div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-mobile-alt feature-icon"></i>
+            <div class="feature-text">Adaptación a diferentes dispositivos</div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-clock feature-icon"></i>
+            <div class="feature-text">Desarrollo más rápido y eficiente</div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="image-container">
+            <div class="section-title">Sitio web con Bootstrap</div>
+            <img src="/home/ubuntu/mi-sitio-web/capturas/captura_sitio_web.png" alt="Sitio web con Bootstrap" class="screenshot">
+          </div>
+          <div class="section-title">Componentes disponibles</div>
+          <div style="height: 300px;">
+            <canvas id="componentsChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Gráfico de componentes de Bootstrap
+      const ctx = document.getElementById('componentsChart').getContext('2d');
+      const componentsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Navegación', 'Botones', 'Tarjetas', 'Formularios', 'Modales'],
+          datasets: [{
+            label: 'Componentes de Bootstrap',
+            data: [100, 100, 100, 100, 100],
+            backgroundColor: [
+              'rgba(52, 152, 219, 0.7)',
+              'rgba(52, 152, 219, 0.7)',
+              'rgba(52, 152, 219, 0.7)',
+              'rgba(52, 152, 219, 0.7)',
+              'rgba(52, 152, 219, 0.7)'
+            ],
+            borderColor: [
+              'rgba(52, 152, 219, 1)',
+              'rgba(52, 152, 219, 1)',
+              'rgba(52, 152, 219, 1)',
+              'rgba(52, 152, 219, 1)',
+              'rgba(52, 152, 219, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          scales: {
+            x: {
+              beginAtZero: true,
+              max: 100,
+              ticks: {
+                callback: function(value) {
+                  return value + '%';
+                }
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return 'Disponibilidad: 100%';
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+

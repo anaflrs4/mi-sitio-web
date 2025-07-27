@@ -82,6 +82,19 @@ La implementación de Bootstrap permite:
 - Mantener consistencia visual en todo el sitio
 - Reducir el tiempo de desarrollo
 
+## Actualización de la implementación del layout y contenido del wireframe
+
+Se ha procedido a implementar el layout y el contenido detallado de los wireframes en todas las páginas del sitio web. Esto incluye:
+
+- **Página de Inicio (index.html)**: Implementación de la sección de héroe, métricas, beneficios, servicios destacados, portafolio, últimos posts y contacto, siguiendo el diseño del wireframe.
+- **Página Sobre mí (sobre-mi.html)**: Creación de la página con secciones de formación académica, habilidades, intereses y testimonios, conforme al wireframe.
+- **Página de Servicios (servicios.html)**: Desarrollo de la página con detalles de los servicios ofrecidos, metodología, tarifas y testimonios, siguiendo el diseño del wireframe.
+- **Página de Portafolio (portafolio.html)**: Creación de la página para mostrar proyectos con descripciones y tags, y una sección de proceso de trabajo.
+- **Página de Blog (blog.html)**: Implementación de la página con listado de artículos y sección de suscripción a newsletter.
+- **Página de Contacto (contacto.html)**: Desarrollo de la página con formulario de contacto, información de contacto y enlaces a redes sociales.
+
+Se han actualizado los estilos CSS para reflejar el diseño visual de los wireframes, incluyendo la navegación, secciones y elementos específicos de cada página. Se ha asegurado la consistencia en el diseño y la responsividad en todas las páginas.
+
 ## Conclusión
 
 El desarrollo de este proyecto ha permitido aplicar los conocimientos adquiridos en la asignatura de Implementación y diseño web. Se han implementado técnicas modernas de desarrollo web, incluyendo:

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #f8f9fa;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header {
+        color: #2c3e50;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 10px;
+      }
+      .content-container {
+        display: flex;
+        flex: 1;
+      }
+      .left-column {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .right-column {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .section-title {
+        color: #2c3e50;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .text-content {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .code-container {
+        background-color: #f1f5f9;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        overflow: auto;
+        max-height: 250px;
+      }
+      .code {
+        font-family: monospace;
+        color: #333333;
+        font-size: 16px;
+        line-height: 1.5;
+        white-space: pre;
+      }
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .feature-icon {
+        color: #3498db;
+        margin-right: 15px;
+        font-size: 24px;
+        flex-shrink: 0;
+      }
+      .feature-text {
+        color: #333333;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .image-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .screenshot {
+        max-width: 500px;
+        max-height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container">
+      <div class="header">Fase 4: Javascript en el sitio web</div>
+      <div class="content-container">
+        <div class="left-column">
+          <div class="section-title">Funcionalidades implementadas</div>
+          <div class="feature-item">
+            <i class="fas fa-comment-dots feature-icon"></i>
+            <div class="feature-text">Saludo con Javascript: Mensaje de bienvenida al cargar la página</div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-mouse-pointer feature-icon"></i>
+            <div class="feature-text">Botón con contador: Incrementa un contador cada vez que se hace clic</div>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-magic feature-icon"></i>
+            <div class="feature-text">Animaciones con AOS: Efectos de aparición al hacer scroll</div>
+          </div>
+          
+          <div class="section-title">Código JavaScript</div>
+          <div class="code-container">
+            <div class="code">document.addEventListener('DOMContentLoaded', () => {
+    // Saludo con Javascript
+    alert('¡Hola! Bienvenido a mi sitio web.');
+
+    // Botón con contador
+    const button = document.createElement('button');
+    button.textContent = 'Haz clic aquí';
+    document.body.appendChild(button);
+
+    const counterDisplay = document.createElement('h2');
+    counterDisplay.textContent = '0';
+    document.body.appendChild(counterDisplay);
+
+    let count = 0;
+    button.addEventListener('click', () => {
+        count++;
+        counterDisplay.textContent = count;
+    });
+});</div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="section-title">Implementación de AOS</div>
+          <div class="code-container">
+            <div class="code">// HTML
+&lt;link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"&gt;
+&lt;script src="https://unpkg.com/aos@2.3.1/dist/aos.js"&gt;&lt;/script&gt;
+
+// Inicialización
+&lt;script&gt;
+    AOS.init();
+&lt;/script&gt;
+
+// Ejemplo de uso
+&lt;h1 data-aos="fade-up"&gt;Bienvenido a Mi Sitio Web&lt;/h1&gt;</div>
+          </div>
+          
+          <div class="image-container">
+            <div class="section-title">Captura de la consola</div>
+            <img src="/home/ubuntu/mi-sitio-web/capturas/captura_consola.png" alt="Captura de la consola" class="screenshot">
+          </div>
+          
+          <div class="image-container">
+            <div class="section-title">Demostración del sitio</div>
+            <img src="/home/ubuntu/mi-sitio-web/capturas/captura_sitio_web.png" alt="Demostración del sitio" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
