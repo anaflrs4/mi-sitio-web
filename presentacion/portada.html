@@ -3,55 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: Implementación y Diseño Web</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
       .slide-container {
         width: 1280px;
         min-height: 720px;
-        background: #ffffff;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1 {
         font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: #ecf0f1;
       }
-      .title {
-        color: #2c3e50;
-        font-size: 72px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .subtitle {
-        color: #333333;
+      h2 {
+        font-family: 'Roboto', sans-serif;
         font-size: 36px;
-        text-align: center;
-        margin-bottom: 20px;
+        font-weight: 400;
+        color: #3498db;
       }
-      .logo {
-        max-width: 200px;
-        margin-bottom: 40px;
-      }
-      .accent-line {
-        width: 100px;
-        height: 5px;
-        background-color: #3498db;
-        margin: 30px 0;
+      p {
+        font-size: 24px;
       }
     </style>
   </head>
   <body>
-    <div class="slide-container">
-      <img src="/home/ubuntu/mi-sitio-web/capturas/captura_repositorio.png" alt="EBC Logo" class="logo">
-      <div class="title">Proyecto Final: Implementación y Diseño Web</div>
-      <div class="accent-line"></div>
-      <div class="subtitle">Ana Flores</div>
-      <div class="subtitle">Implementación y diseño web</div>
+    <div class="slide-container flex flex-col items-center justify-center p-16">
+      <h1 class="mb-8 text-center">Proyecto Final: Implementación y Diseño Web</h1>
+      <h2 class="mb-16 text-center">Sitio Web Personal/Profesional</h2>
+      <p class="mb-4 text-center">Ana Paula Flores</p>
+      <p class="text-center">Aplicaciones Web</p>
     </div>
   </body>
 </html>

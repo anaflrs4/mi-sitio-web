@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuras Mejoras</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        max-height: 720px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #ecf0f1;
+      }
+      .improvement-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
+      .improvement-icon {
+        background: #3498db;
+        color: #ecf0f1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        flex-shrink: 0;
+      }
+      .improvement-icon i {
+        font-size: 24px;
+      }
+      .improvement-content {
+        flex-grow: 1;
+      }
+      .improvement-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .improvement-description {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-12">
+      <h1 class="mb-10 text-center">Futuras Mejoras</h1>
+      
+      <div class="max-w-5xl mx-auto flex-grow">
+        <div class="improvement-item">
+          <div class="improvement-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="improvement-content">
+            <div class="improvement-title">Sistema de Blog Funcional</div>
+            <div class="improvement-description">
+              Implementar un sistema de blog con base de datos para gestionar artículos y comentarios.
+            </div>
+          </div>
+        </div>
+        
+        <div class="improvement-item">
+          <div class="improvement-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="improvement-content">
+            <div class="improvement-title">Portafolio Interactivo</div>
+            <div class="improvement-description">
+              Desarrollar un portafolio con más detalles de proyectos y filtros interactivos.
+            </div>
+          </div>
+        </div>
+        
+        <div class="improvement-item">
+          <div class="improvement-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="improvement-content">
+            <div class="improvement-title">Análisis de Tráfico</div>
+            <div class="improvement-description">
+              Integrar Google Analytics para monitorear el comportamiento de los usuarios.
+            </div>
+          </div>
+        </div>
+        
+        <div class="improvement-item">
+          <div class="improvement-icon">
+            <i class="fas fa-universal-access"></i>
+          </div>
+          <div class="improvement-content">
+            <div class="improvement-title">Mejoras de Accesibilidad</div>
+            <div class="improvement-description">
+              Optimizar el sitio para cumplir con los estándares WCAG de accesibilidad web.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

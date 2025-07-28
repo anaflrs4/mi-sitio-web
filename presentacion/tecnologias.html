@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Utilizadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #ecf0f1;
+      }
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .tech-item {
+        background: rgba(52, 152, 219, 0.1);
+        border-radius: 8px;
+        padding: 24px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .tech-item:hover {
+        transform: translateY(-5px);
+      }
+      .tech-icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+        color: #3498db;
+      }
+      .tech-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .tech-description {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-16">
+      <h1 class="mb-12 text-center">Tecnologías Utilizadas</h1>
+      
+      <div class="tech-grid max-w-5xl mx-auto">
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="tech-name">HTML5</div>
+          <div class="tech-description">Estructura semántica y organización del contenido</div>
+        </div>
+        
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="tech-name">CSS3</div>
+          <div class="tech-description">Estilos, animaciones y diseño responsivo</div>
+        </div>
+        
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="tech-name">JavaScript</div>
+          <div class="tech-description">Interactividad y funcionalidades dinámicas</div>
+        </div>
+        
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-bootstrap"></i>
+          </div>
+          <div class="tech-name">Bootstrap 5.1</div>
+          <div class="tech-description">Framework CSS para diseño responsivo</div>
+        </div>
+        
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <div class="tech-name">AOS</div>
+          <div class="tech-description">Animate On Scroll para efectos visuales</div>
+        </div>
+        
+        <div class="tech-item">
+          <div class="tech-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="tech-name">GitHub Pages</div>
+          <div class="tech-description">Plataforma de despliegue del sitio web</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

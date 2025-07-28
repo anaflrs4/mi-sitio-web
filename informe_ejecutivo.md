@@ -1,112 +1,113 @@
-# Informe Ejecutivo - Proyecto Final de Aplicaciones Web
+# Informe Ejecutivo: Proyecto Final de Aplicaciones Web
 
-## Portada
-- **Escudo EBC**
-- **Nombre del docente/asesor:** [Nombre del docente]
-- **Asignatura:** Implementación y diseño web
-- **Integrante:** Ana Flores
+## Introducción
 
-## Fase 1 - Ambientación y aprovisionamiento
+Este informe documenta el proceso de desarrollo e implementación del proyecto final para la clase de Aplicaciones Web. El proyecto consistió en la creación de un sitio web personal/profesional para Ana Paula Flores, diseñadora UX, siguiendo las instrucciones específicas proporcionadas en el documento del proyecto.
 
-En esta fase inicial, se creó una cuenta en GitHub Pages y se configuró un repositorio para alojar el sitio web. Se creó un archivo index.html básico con los elementos requeridos:
+## Objetivos del Proyecto
 
-- Encabezado
-- Título
-- Cuerpo
+1. Crear un sitio web responsivo utilizando HTML5, CSS3 y JavaScript
+2. Implementar un diseño basado en wireframes y sitemap proporcionados
+3. Integrar elementos de animación y efectos visuales
+4. Utilizar un framework CSS (Bootstrap)
+5. Desplegar el sitio en GitHub Pages
+6. Documentar el proceso y los resultados
 
-El repositorio se encuentra disponible en: [https://github.com/anaflrs4/mi-sitio-web](https://github.com/anaflrs4/mi-sitio-web)
+## Implementación
 
-La URL del sitio web es: [https://anaflrs4.github.io/mi-sitio-web/](https://anaflrs4.github.io/mi-sitio-web/)
+### Fase 1: Configuración del Repositorio
 
-### Capturas de pantalla
+Se creó un repositorio en GitHub Pages con el nombre "mi-sitio-web" bajo la cuenta de usuario anaflrs4. El repositorio está disponible en: https://github.com/anaflrs4/mi-sitio-web
 
-![Captura del repositorio](captura_repositorio.png)
+### Fase 2: Planeación y Diseño
 
-## Fase 2 - Planeación del sitio web
+Se utilizaron los wireframes y el sitemap proporcionados para planificar la estructura del sitio web. El sitio consta de las siguientes páginas:
 
-En esta fase se elaboraron los diagramas de navegación (sitemap) y el diseño visual (wireframe) utilizando herramientas de diseño. Estos diagramas sirvieron como base para la implementación del sitio web.
+- Inicio (index.html)
+- Sobre mí (sobre-mi.html)
+- Servicios (servicios.html)
+- Portafolio (portafolio.html)
+- Blog (blog.html)
+- Contacto (contacto.html)
+- Derechos (derechos.html)
 
-El sitemap muestra la estructura de navegación del sitio, incluyendo todas las páginas y su jerarquía. El wireframe presenta el diseño visual de cada página, mostrando la disposición de los elementos en la interfaz.
+### Fase 3: Implementación HTML y CSS
 
-### Sitemap
-El sitemap incluye las siguientes secciones:
-- Inicio
-- Sobre mí
-- Servicios
-- Portafolio
-- Blog
-- Contacto
+Se desarrolló la estructura HTML5 para cada página, siguiendo fielmente los wireframes proporcionados. Se implementó un diseño responsivo utilizando los siguientes elementos de CSS3:
 
-### Wireframe
-El wireframe muestra el diseño de las siguientes secciones:
-- Header con navegación
-- Hero section
-- Sección de métricas
-- Beneficios
-- Servicios destacados
-- Portafolio
-- Blog
-- Contacto
+1. **Media queries**: Para adaptar el diseño a diferentes tamaños de pantalla
+2. **Flexbox**: Para crear layouts flexibles y responsivos
+3. **Transiciones**: Para efectos suaves en elementos interactivos
+4. **Variables CSS**: Para mantener consistencia en colores y estilos
+5. **Box-sizing**: Para un manejo más intuitivo de las dimensiones de los elementos
 
-## Fase 3 - Implementación y estilo del sitio web
+### Fase 4: Implementación JavaScript
 
-En esta fase se implementó el diseño responsivo del sitio web, basado en los diseños elaborados en la fase anterior. Se utilizaron los siguientes elementos de CSS3:
+Se agregaron las siguientes funcionalidades con JavaScript:
 
-1. **Media queries** para adaptación a diferentes dispositivos
-2. **Flexbox** para la disposición de elementos
-3. **Transiciones** para efectos visuales
-4. **Variables CSS** para mantener consistencia en colores y tipografía
-5. **Box-sizing** para un manejo más intuitivo de las dimensiones
+1. **Animaciones**: Se integró la biblioteca AOS (Animate On Scroll) para crear animaciones al hacer scroll
+2. **Interactividad**: Se implementaron elementos interactivos como formularios y botones con respuesta visual
 
-El diseño es completamente responsivo y se visualiza correctamente tanto en dispositivos móviles como en equipos de cómputo.
+### Fase 5: Integración de Framework
 
-## Fase 4 - Javascript en el sitio web
+Se integró Bootstrap 5.1 para mejorar el diseño y la responsividad del sitio. Se utilizaron componentes como:
 
-Se implementaron las siguientes funcionalidades con JavaScript:
+- Sistema de grid para layouts responsivos
+- Componentes de navegación
+- Tarjetas para mostrar contenido
+- Formularios estilizados
+- Botones y badges
 
-1. **Saludo con Javascript**: Se creó un mensaje de bienvenida que se muestra al cargar la página.
-2. **Botón con contador**: Se implementó un botón que incrementa un contador cada vez que se hace clic en él.
-3. **Animaciones con AOS**: Se integraron animaciones de aparición al hacer scroll utilizando la biblioteca AOS (Animate On Scroll).
+### Fase 6: Contenido y Navegación
 
-### Captura de pantalla de la consola
+Se implementó el contenido detallado para cada sección según los wireframes:
 
-![Captura de la consola](captura_consola.png)
+1. **Página de Inicio**: Header con navegación, sección hero, métricas, beneficios, servicios destacados, portafolio previa, últimos posts del blog y sección de contacto.
 
-## Fase 5 - Implementación de frameworks CSS
+2. **Página Sobre mí**: Información personal, formación académica, habilidades, intereses y testimonios.
 
-Se implementó el framework Bootstrap 5.1 en el sitio web. Este framework proporciona componentes prediseñados y un sistema de rejilla que facilita la creación de interfaces responsivas.
+3. **Página de Servicios**: Servicios ofrecidos, metodología de trabajo, tarifas y testimonios.
 
-La implementación de Bootstrap permite:
-- Utilizar componentes como botones, tarjetas y formularios con estilos predefinidos
-- Aprovechar el sistema de rejilla para layouts responsivos
-- Mantener consistencia visual en todo el sitio
-- Reducir el tiempo de desarrollo
+4. **Página de Portafolio**: Proyectos detallados con imágenes y proceso de trabajo.
 
-## Actualización de la implementación del layout y contenido del wireframe
+5. **Página de Blog**: Artículos del blog con imágenes y newsletter de suscripción.
 
-Se ha procedido a implementar el layout y el contenido detallado de los wireframes en todas las páginas del sitio web. Esto incluye:
+6. **Página de Contacto**: Formulario de contacto, información de contacto, enlaces a redes sociales y sección de disponibilidad.
 
-- **Página de Inicio (index.html)**: Implementación de la sección de héroe, métricas, beneficios, servicios destacados, portafolio, últimos posts y contacto, siguiendo el diseño del wireframe.
-- **Página Sobre mí (sobre-mi.html)**: Creación de la página con secciones de formación académica, habilidades, intereses y testimonios, conforme al wireframe.
-- **Página de Servicios (servicios.html)**: Desarrollo de la página con detalles de los servicios ofrecidos, metodología, tarifas y testimonios, siguiendo el diseño del wireframe.
-- **Página de Portafolio (portafolio.html)**: Creación de la página para mostrar proyectos con descripciones y tags, y una sección de proceso de trabajo.
-- **Página de Blog (blog.html)**: Implementación de la página con listado de artículos y sección de suscripción a newsletter.
-- **Página de Contacto (contacto.html)**: Desarrollo de la página con formulario de contacto, información de contacto y enlaces a redes sociales.
+7. **Página de Derechos**: Información legal y de privacidad del sitio web.
 
-Se han actualizado los estilos CSS para reflejar el diseño visual de los wireframes, incluyendo la navegación, secciones y elementos específicos de cada página. Se ha asegurado la consistencia en el diseño y la responsividad en todas las páginas.
+Se configuró la navegación entre todas las páginas y se implementaron enlaces funcionales en el footer que dirigen a:
+- Enlaces: Video de Rick Roll en YouTube
+- Redes Sociales: Página principal de Instagram
+- Derechos: Página de derechos del sitio
 
-## Conclusión
+## Resultados
 
-El desarrollo de este proyecto ha permitido aplicar los conocimientos adquiridos en la asignatura de Implementación y diseño web. Se han implementado técnicas modernas de desarrollo web, incluyendo:
+El sitio web ha sido implementado exitosamente y está disponible en: https://anaflrs4.github.io/mi-sitio-web/
 
-- Creación y gestión de repositorios con GitHub Pages
-- Diseño de la arquitectura de información y wireframes
-- Implementación de diseños responsivos con CSS3
-- Programación de interactividad con JavaScript
-- Integración de bibliotecas como AOS para animaciones
-- Uso de frameworks como Bootstrap para agilizar el desarrollo
+### Características Destacadas
 
-El resultado es un sitio web funcional, estéticamente agradable y que cumple con los estándares actuales de desarrollo web. Este proyecto ha fortalecido las competencias técnicas en el uso de herramientas para la creación de aplicaciones web, así como las competencias de organización y emprendimiento-innovación.
+1. **Diseño Responsivo**: El sitio se adapta perfectamente a dispositivos móviles, tablets y escritorio.
+2. **Navegación Intuitiva**: Menú de navegación claro y consistente en todas las páginas.
+3. **Contenido Estructurado**: Información organizada de manera lógica y atractiva.
+4. **Elementos Visuales**: Uso de imágenes y colores para mejorar la experiencia del usuario.
+5. **Interactividad**: Elementos interactivos que mejoran la experiencia del usuario.
 
-La experiencia adquirida en este proyecto será de gran utilidad para futuros desarrollos web, tanto en el ámbito académico como profesional.
+## Conclusiones
+
+El proyecto ha cumplido con todos los requisitos especificados en las instrucciones. Se ha creado un sitio web profesional, responsivo y visualmente atractivo que muestra las habilidades y servicios de Ana Paula Flores como diseñadora UX.
+
+La implementación ha seguido las mejores prácticas de desarrollo web, utilizando tecnologías modernas como HTML5, CSS3, JavaScript y Bootstrap. El sitio está correctamente desplegado en GitHub Pages y es completamente funcional.
+
+## Recomendaciones para Futuras Mejoras
+
+1. Implementar un sistema de blog funcional con base de datos
+2. Agregar un portafolio interactivo con más detalles de proyectos
+3. Integrar análisis de tráfico con Google Analytics
+4. Mejorar la accesibilidad del sitio para cumplir con estándares WCAG
+5. Optimizar el rendimiento para mejorar la velocidad de carga
+
+---
+
+*Informe preparado para el Proyecto Final de la clase de Aplicaciones Web*
 
